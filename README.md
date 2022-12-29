@@ -1,4 +1,4 @@
-<h1> Hey there! I'm Montasir 👋 </h1>
+<h1>Hey! I'm Montasir <img src="https://res.cloudinary.com/dci23h4au/image/upload/v1672341010/wave_e55zuk.gif" width="50" > </h1>
 <h2> A Passionate Software Developer From Morocco </h2>
 <img align="right" alt="GIF" src="https://res.cloudinary.com/dci23h4au/image/upload/v1672340908/programmer-2_dhbskj.gif" width="500"/>
 <h3> 👨🏻‍💻 About Me </h3>
