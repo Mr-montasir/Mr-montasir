@@ -8,7 +8,7 @@
 - 💼 &nbsp; full-stack developer and Data Science.
 - 🌱 &nbsp; Enthusiast in full-Stack And Learning New Languages.
 - ✍️ &nbsp; Watching universe and trying out latest design trends as hobbies/side hustles.
-- 😴 &nbsp; I belive, a perfect nap can be the ultimate solution for any stress.
+- 😴 &nbsp; All my focus is at 👨🏻‍💻 Programming, 🎮 Video Games, 🎥 Movies & Series.
 
 
 <p align="center">
