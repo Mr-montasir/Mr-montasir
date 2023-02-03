@@ -1,6 +1,6 @@
 <h1>Hey! I'm Montasir <img src="https://res.cloudinary.com/dci23h4au/image/upload/v1672341010/wave_e55zuk.gif" width="50" > </h1>
 <h2> A Passionate Software Developer From Morocco </h2>
-<img align="right" alt="GIF" src="https://raw.githubusercontent.com/Mr-montasir/Mr-montasir/main/src/assets/images/coding_img.png" width="300"/>
+<img align="right" alt="GIF" src="https://raw.githubusercontent.com/Mr-montasir/Mr-montasir/main/src/assets/images/coding_img.png" width="400"/>
 <h3> 👨🏻‍💻 About Me </h3>
 
 - 🔭 &nbsp; I’m currently learning ReactJs
