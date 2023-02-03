@@ -1,6 +1,7 @@
 import React from "react";
 // import Components
 import Header from '../components/header.jsx';
+import Contact from '../components/contact.jsx';
 
 // import images 
 import Dots from '../assets/images/dots.png';
@@ -22,7 +23,7 @@ function home() {
                 <img class="myimage" src={Main_Image}/>
             </div>
             <div class="text">
-                <h2>
+                <h2 className="code_snippet">
                     <span class="number">1.</span>
                     <div class="code">
                         <span class="blue">document.</span><span class="yellow">write(</span><span class="green">'Hi There !!'</span><span class="yellow">)</span>
@@ -58,6 +59,7 @@ function home() {
                 <img src={StackOverflow} alt="Stack Overflow Mountassir"/>
             </a>
         </div>
+        <Contact />
     </>
     )
 }
