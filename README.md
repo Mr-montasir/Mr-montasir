@@ -8,7 +8,8 @@
 - 💼 &nbsp; full-stack developer and Data Science.
 - 🌱 &nbsp; Enthusiast in full-Stack And Learning New Languages.
 - ✍️ &nbsp; Watching universe and trying out latest design trends as hobbies/side hustles.
-- 😴 &nbsp; All my focus is at 👨🏻‍💻 Programming, 🎮 Video Games, 🎥 Movies & Series.
+
+My Interests are 👨🏻‍💻 Programming, 🎮 Video Games, 🎥 Movies & Series.
 
 
 <p align="center">
