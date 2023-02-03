@@ -19,5 +19,4 @@ for command in commands:
 
 
 # Users 
-## Montasir 
-## Abdelmoula    
+## Montasir Only
