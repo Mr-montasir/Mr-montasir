@@ -4,6 +4,7 @@ import Hacker from '../assets/images/icons/hacker.png';
 import handshake from '../assets/images/icons/handshake.png';
 import messages from '../assets/images/icons/messages.png';
 // import php handelers
+import php_config from '../php/config.php';
 import contact_handeler from '../php/contact.php';
 function Contact() {
     return(
@@ -45,7 +46,7 @@ function Contact() {
                         <div className="to_contact active"><span>Message</span> <img src={messages} alt="Message Mountassir" /></div>
                         <div className="to_hire"><span>Hire</span> <img src={handshake} alt="Hire Mountassir" /></div>
                     </div>
-                    <form action={contact_handeler} >
+                    <form action={contact_handeler} method='POST' >
                         <div className="element">
                             <input type="text" name="username" placeholder="Name/Nickname or whatever" id="username" />
                         </div>
@@ -72,6 +73,7 @@ function Contact() {
                         <div className="element">
                             <textarea name="user_message" id="user_message" placeholder="Dont be shame, Write Me a mesage!"></textarea>
                         </div>
+                        <input type="submit" value="Go for Launch!" />
                     </form>
                 </div>
             </div>
