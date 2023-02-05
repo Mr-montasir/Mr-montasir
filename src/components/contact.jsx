@@ -4,7 +4,6 @@ import Hacker from '../assets/images/icons/hacker.png';
 import handshake from '../assets/images/icons/handshake.png';
 import messages from '../assets/images/icons/messages.png';
 // import php handelers
-import php_config from '../php/config.php';
 import contact_handeler from '../php/contact.php';
 function Contact() {
     return(
@@ -14,15 +13,15 @@ function Contact() {
                 <div className="left">
                     <div className="grid">
                         <div className="details">
-                            <h3><i class="fa-solid fa-address-card"></i> Contact Details</h3>
+                            <h3><i className="fa-solid fa-address-card"></i> Contact Details</h3>
                             <p>My name is Mountassir Selmani and I am located in Tanger, Morocco. If you need to reach me, feel free to call me at +212 657 191 955.</p>
                         </div>
                         <div className="details">
-                            <h3><i class="fa-solid fa-laptop-code"></i> Web Development</h3>
+                            <h3><i className="fa-solid fa-laptop-code"></i> Web Development</h3>
                             <p>Experienced in everything related to web development, i can build you a website from 0 to hero 🐱‍🏍</p>
                         </div>
                         <div className="details">
-                            <h3><i class="fa-brands fa-playstation"></i> Video Games</h3>
+                            <h3><i className="fa-brands fa-playstation"></i> Video Games</h3>
                             <p>I believe that nothing beats a good video game session.</p>
                             <br />
                             <p className="code_snippet center_x">
@@ -60,13 +59,13 @@ function Contact() {
                                     <span className="default">Service</span><img src={Hacker} />
                                 </div>
                                 <div className="option">
-                                    Frontend <i class="fa-duotone fa-window"></i>
+                                    Frontend <i className="fa-duotone fa-window"></i>
                                 </div>
                                 <div className="option">
-                                    Backend <i class="fa-solid fa-database"></i>
+                                    Backend <i className="fa-solid fa-database"></i>
                                 </div>
                                 <div className="option">
-                                    Fullstack <i class="fa-duotone fa-layer-group"></i>
+                                    Fullstack <i className="fa-duotone fa-layer-group"></i>
                                 </div>
                             </div>
                         </div>

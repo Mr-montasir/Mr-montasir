@@ -3,36 +3,44 @@ import ReactDOM from "react-dom/client";
 
 // import assets
 import './assets/css/main.css';
-import './assets/js/script.js';
-// import Components
-import Header from './components/header.jsx';
 
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"; 
+
+//import layout
+import Root from './root';
 // Import Pages
 import Home from './Pages/home.jsx';
 import About from './Pages/about.jsx';
+import Admin from './Pages/admin.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
+      },
+    ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div class="Page">
-      <Header />
-      <RouterProvider router={router} />
-    </div>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

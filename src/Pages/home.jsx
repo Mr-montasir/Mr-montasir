@@ -14,25 +14,28 @@ import Dribble from '../assets/images/icons/dribbble.png';
 import Github from '../assets/images/icons/github.png';
 import StackOverflow from '../assets/images/icons/stack-overflow.png';
 
+// import js
+import '../assets/js/script';
+
 function home() {
     return(
-    <>
-        <div class="content">
-            <div class="personal-image">
-                <img src={Dots} class="dots" id="image_dots"/>
-                <img class="myimage" src={Main_Image}/>
+        <>
+        <div className="content">
+            <div className="personal-image">
+                <img src={Dots} className="dots" id="image_dots"/>
+                <img className="myimage" src={Main_Image}/>
             </div>
-            <div class="text">
+            <div className="text">
                 <h2 className="code_snippet">
-                    <span class="number">1.</span>
-                    <div class="code">
-                        <span class="blue">document.</span><span class="yellow">write(</span><span class="green">'Hi There !!'</span><span class="yellow">)</span>
+                    <span className="number">1.</span>
+                    <div className="code">
+                        <span className="blue">document.</span><span className="yellow">write(</span><span className="green">'Hi There !!'</span><span className="yellow">)</span>
                     </div>
                 </h2>
                 <h1>
-                    I'm a Fullstack Developer Very <span class="primary-color">Talented</span>  and  <span class="secondary-color">experienced</span>  in my domain
+                    I'm a Fullstack Developer Very <span className="primary-color">Talented</span>  and  <span className="secondary-color">experienced</span>  in my domain
                 </h1>
-                <div class="social-media"> 
+                <div className="social-media"> 
                     <a target="_blank" href="https://www.facebook.com/montaser.selmani/">
                         <img src={Facebook} alt="facebook Mountassir"/>
                     </a>
@@ -48,7 +51,7 @@ function home() {
                 </div>
             </div>
         </div>
-        <div class="coding-icons">
+        <div className="coding-icons">
             <a target="_blank" href="https://dribbble.com/Mr-montasir">
                 <img src={Dribble} alt="Dribbble Mountassir"/>
             </a>
@@ -60,7 +63,7 @@ function home() {
             </a>
         </div>
         <Contact />
-    </>
+        </>
     )
 }
 

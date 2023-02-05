@@ -1,4 +1,15 @@
-<?php include 'config.cae31156a3cdefc4a75f.php'; ?>
+<?php 
+    $servername = "localhost";
+    $username = "u914780542_mrmontasir";
+    $password = "!Montasir2005";
+    $database = "u914780542_mrmontasir";
+    
+    $conn = mysqli_connect($servername, $username, $password, $database);
+    
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+?>
 <?php
 $username = $_POST['username'];
 $email = $_POST['email'];
