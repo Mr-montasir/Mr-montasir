@@ -17,25 +17,31 @@ import Home from './Pages/home.jsx';
 import About from './Pages/about.jsx';
 import Admin from './Pages/admin.jsx';
 
-
+const all_pages = [
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
+  },
+]
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/admin",
-        element: <Admin />,
-      },
-    ],
+    children: all_pages,
+  },
+  {
+    path: "/admin",
+  },
+  {
+    path: "/about",
   },
 ]);
 

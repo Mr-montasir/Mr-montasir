@@ -2,25 +2,57 @@ import React, { useState, useEffect } from 'react';
 
 // import php files
 import admin_data from '../php/admin-data.php';
+import delete_submission_php from '../php/delete_submission.php';
 
+// remove submission
+function delete_submission_js(row_id_js, event) {
+  let the_submission = event.currentTarget.closest('.user_submission');
+  the_submission.remove();
+  fetch(delete_submission_php+'?submission_id='+row_id_js, {
+    method: "GET",
+  }) 
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("HTTP error " + response.status);
+    }
+  })
+  .catch(error => {
+      console.log(error);
+  });
+}
 const Admin = () => {
     const [data, setData] = useState([]);
-  
+    
     useEffect(() => {
       fetch(admin_data)
         .then(res => res.json())
         .then(data => setData(data));
     }, []);
-  
+
     return (
-      <div>
-        {data.map(item => (
-          <div key={item.row_id}>
-            <p>{item.user_email}</p>
-            <p>{item.user_name}</p>
-            <p>{item.user_message}</p>
+      <div className='admin_page'>
+      {data.map(item => (
+        <div key={item.row_id} className='user_submission'>\
+          <h3 className="username">
+            <i class="fa-regular fa-user-bounty-hunter"></i>
+            {item.user_name}
+          </h3>
+          <div className="other_data">
+            <div className="data_element">
+              <div className="label"><i class="fa-solid fa-envelope"></i> Email: </div>
+              <div className="user_input">{item.user_email}</div>
+            </div>
+            <div className="data_element">
+              <div className="label"><i class="fa-regular fa-inbox"></i> Message: </div>
+              <div className="user_input">{item.user_message}</div>
+            </div>
           </div>
-        ))}
+          <div className="submission_id">{item.row_id}</div>
+          <div className="delete_submission hovered" onClick={(event) => delete_submission_js(item.row_id , event)}>
+            <i class="fa-solid fa-fire"></i>
+          </div>
+        </div>
+      ))}
       </div>
     );
   };
