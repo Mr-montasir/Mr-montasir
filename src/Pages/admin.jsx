@@ -36,7 +36,7 @@ const Admin = () => {
           <div className="other_data">
             <div className="data_element">
               <div className="label"><i className="fa-solid fa-envelope"></i> Email: </div>
-              <div className="user_input">{item.user_email}</div>
+              <div className="user_input">{item.user_contact_method}</div>
             </div>
             <div className="data_element">
               <div className="label"><i className="fa-regular fa-inbox"></i> Message: </div>
