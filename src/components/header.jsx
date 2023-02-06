@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-// import images 
-import Logo from '../assets/images/logo-2.png';
 // import header script
 import '../assets/js/header.js';
 
@@ -10,14 +8,14 @@ function Header() {
         <header>
             {/* logo */}
             <Link to={`/`}>
-                <img className="logo" src={Logo} alt="logo"/>
+                <img className="logo" src='/images/logo-2.png' alt="logo"/>
             </Link>
             {/* bars */}
             <div className="menu-bars" id="header_menu">
                 <div className="menu" >
                     <div className="links">
                         <Link to={`/admin`}>
-                        <i class="fa-regular fa-lock"></i> Admin
+                        <i className="fa-regular fa-lock"></i> Admin
                         </Link>
                         <Link to={`#`}>
                             <i className="fa-solid fa-briefcase"></i> View Work

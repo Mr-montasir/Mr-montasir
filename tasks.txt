@@ -1,0 +1,17 @@
+[ SORTING TASKS BY IMPORTANCE ]
+[
+    ------  => First
+    -----   => As Soon As Possible
+    ---     => Preferrable
+    --      => If i have time
+    |       => Whenever
+]
+
+----- Validate user inputs in the form.
+----- In the admin page, check if the contact is with phone or email and show the corresponding icon.
+--- Debug the console errors.
+-- Add REQUEST form.
+
+| Remove All Static javascript and turn it to state instead.
+| Use State or Props in all of website isntead of static things.
+| Turn admin page data to state instead of useEffect if possible (I will need to search more to achieve it)

@@ -13,7 +13,7 @@
         left: 0;
         height: 100vh;
         width: 100%;
-        background: url(../images/background-gif-2.gif);
+        background-image: url(../images/background-gif-2.gif);
         background-position: center center;
         background-size: cover; 
         pointer-events: none;
@@ -290,7 +290,7 @@
                             @include fire_color();
                         }
                     }
-                    &.to_hire {
+                    &.to_request {
                         background: #010409;
                         span {
                             @include eighties_color();
@@ -308,7 +308,7 @@
                         &.to_contact {
                             border: 1px solid #791d52;
                         }
-                        &.to_hire {
+                        &.to_request {
                             border: 1px solid #ff8037;
                         }
                     }
@@ -316,7 +316,7 @@
                         &.to_contact {
                             box-shadow: 0px 0px 5px 2px #ff47b2;
                         }
-                        &.to_hire {
+                        &.to_request {
                             box-shadow: 0px 0px 5px 2px #ff8037;
                         }
                     }
@@ -328,6 +328,18 @@
                 gap:10px;
                 padding-right: 10px;
                 border-right: 1px solid #791d52;
+                .element {
+                    display: flex;
+                    .switcher_icon {
+                        height:40px;
+                        width: 50px;
+                        @include toCenter();
+                        background: #791d52;
+                        img {
+                            height: 30px;
+                        }
+                    }
+                }
                 input,
                 textarea {
                     resize: none;

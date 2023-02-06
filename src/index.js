@@ -37,12 +37,6 @@ const router = createBrowserRouter([
     element: <Root />,
     children: all_pages,
   },
-  {
-    path: "/admin",
-  },
-  {
-    path: "/about",
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

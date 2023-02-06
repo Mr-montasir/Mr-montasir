@@ -1,10 +1,8 @@
 import React from "react";
-// import images 
-import Hacker from '../assets/images/icons/hacker.png';
-import handshake from '../assets/images/icons/handshake.png';
-import messages from '../assets/images/icons/messages.png';
-// import php handelers
-import contact_handeler from '../php/contact.php';
+
+// import forms
+import ContactForm from "./forms/contact_form";
+
 function Contact() {
     return(
         <div className="contact">
@@ -42,38 +40,10 @@ function Contact() {
                 </div>
                 <div className="right">
                     <div className="what_form">
-                        <div className="to_contact active"><span>Message</span> <img src={messages} alt="Message Mountassir" /></div>
-                        <div className="to_hire"><span>Hire</span> <img src={handshake} alt="Hire Mountassir" /></div>
+                        <div className="to_contact active"><span>Message</span> <img src='/images/icons/messages.png' alt="Message Mountassir" /></div>
+                        <div className="to_request"><span>Request</span> <img src='/images/icons/handshake.png' alt="request Mountassir" /></div>
                     </div>
-                    <form action={contact_handeler} method='POST' >
-                        <div className="element">
-                            <input type="text" name="username" placeholder="Name/Nickname or whatever" id="username" />
-                        </div>
-                        <div className="element">
-                            <input type="email" name="email" placeholder="Email" id="email" />
-                        </div>
-                        <div className="element hide">
-                            <input type="hidden" name="service_type" placeholder="What Service Do you want" id="service_type" />
-                            <div className="dropdown">
-                                <div className="choosen">
-                                    <span className="default">Service</span><img src={Hacker} />
-                                </div>
-                                <div className="option">
-                                    Frontend <i className="fa-duotone fa-window"></i>
-                                </div>
-                                <div className="option">
-                                    Backend <i className="fa-solid fa-database"></i>
-                                </div>
-                                <div className="option">
-                                    Fullstack <i className="fa-duotone fa-layer-group"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="element">
-                            <textarea name="user_message" id="user_message" placeholder="Dont be shame, Write Me a mesage!"></textarea>
-                        </div>
-                        <input type="submit" value="Go for Launch!" />
-                    </form>
+                    <ContactForm />
                 </div>
             </div>
         </div>

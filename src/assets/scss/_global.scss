@@ -32,7 +32,7 @@
     span.secondary-color {
         color: #ff47b2;
     }
-    cursor: url('../images/cursor/cursor.png'), auto;
+    cursor: url('../cursor/cursor.png'), auto;
     ::selection {
         background:#750044 ;
         color: white;
@@ -40,7 +40,7 @@
 }
 a, 
 .hovered {
-    cursor: url('../images/cursor/pointer.png'), auto;  
+    cursor: url('../cursor/pointer.png'), auto;  
     img,
     i {
         pointer-events: none !important;
