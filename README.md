@@ -3,7 +3,7 @@
 <img align="right" alt="GIF" src="https://mrmontasir.com/images/coding_img.png" width="300"/>
 <h3> 👨🏻‍💻 About Me </h3>
 
-- 🔭 &nbsp; I’m currently learning ReactJs
+- 🔭 &nbsp; I’m currently learning React.Js
 - 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
 - 💼 &nbsp; full-stack developer and Data Science.
 - 🌱 &nbsp; Enthusiast in full-Stack And Learning New Languages.
